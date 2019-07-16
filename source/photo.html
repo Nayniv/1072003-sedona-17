@@ -8,11 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="логотип Седона">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -29,58 +26,57 @@
           </li>
         </ul>
       </div>
+  	  <a class="page-header__logo">
+        <img class="page-header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="логотип Седона">
+      </a>
     </nav>
   </header>
   <main class="page-photo">
     <h1 class="visyally-hidden">Седона: фото и видео</h1>
     <section class="photo-guest">
-      <div class="block-content photo-guest__block-content">
-        <h2 class="block-content__header">Фото и видео</h2>
-        <p class="block-content__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
+        <h2 class="photo-guest__title title">Фото и видео</h2>
+        <p class="photo-guest__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <div class="photo-guest__list">
         <figure class="photo-guest__item">
           <img src="http://placehold.it/102x83" width="280" height="280" alt="Неродные просторы">
           <figcaption>Неродные просторы</figcaption>
           <span class="photo-guest__name">Автор фото: Борис</span>
-          <span class="photo-guest__like">1350</span>
+          <div class="photo-guest__like like"></div><span class="photo-guest__like">1350</span>
         </figure>
         <figure class="photo-guest__item">
           <img src="http://placehold.it/102x83" width="280" height="280" alt="Местная растительность">
           <figcaption>Местная растительность</figcaption>
           <span class="photo-guest__name">Автор фото: Сергей</span>
-          <span class="photo-guest__like">143</span>
+          <div class="photo-guest__like like"></div><span class="photo-guest__like">143</span>
         </figure>
         <figure class="photo-guest__item">
           <img src="http://placehold.it/102x83" width="280" height="280" alt="Дорога на север">
           <figcaption>Дорога на север</figcaption>
           <span class="photo-guest__name">Автор фото: Петр</span>
-          <span class="photo-guest__like">96</span>
+          <div class="photo-guest__like like"></div><span class="photo-guest__like">96</span>
         </figure>
         <figure class="photo-guest__item">
           <img src="http://placehold.it/102x83" width="280" height="280" alt="Мост Дьявола">
           <figcaption>Мост Дьявола</figcaption>
           <span class="photo-guest__name">Автор фото: Антон</span>
-          <span class="photo-guest__like">254</span>
+          <div class="photo-guest__like like"></div><span class="photo-guest__like">254</span>
         </figure>
       </div>
     </section>
     <section class="video-sedona">
-      <div class="block-content video-sedona__block-content">
-        <h2 class="block-content__header">Все еще сомневаетесь?</h2>
-        <p class="block-content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      </div>
-      <img class="video-sedona__picture" src="http://placehold.it/321x201" width="321" height="201" alt="Видео Седоны">
-      <div class="video-sedona__pleer-interface"></div>
+        <h2 class="video-sedona__title title">Все еще сомневаетесь?</h2>
+        <p class="video-sedona__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <img class="video-sedona__picture" src="http://placehold.it/321x201" width="321" height="201" alt="Видео Седоны">
+        <div class="video-sedona__pleer-interface"></div>
     </section>
   </main>
   <footer class="page-footer">
     <span class="page-footer__visit-sedona">#visitSEDONA</span>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--twitter">Twitter</a></li>
-        <li class="social__item"><a class="social__link social__link--facebook">Facebook</a></li>
-        <li class="social__item"><a class="social__link social__link--youtube">YouTube</a></li>
+        <li class="social__item"><a class="social__link social__link--twitter button">Twitter</a></li>
+        <li class="social__item"><a class="social__link social__link--facebook button">Facebook</a></li>
+        <li class="social__item"><a class="social__link social__link--youtube button">YouTube</a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
