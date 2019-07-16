@@ -8,9 +8,6 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="логотип Седона">
-    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
@@ -29,15 +26,58 @@
           </li>
         </ul>
       </div>
+      <a class="page-header__logo">
+        <img class="page-header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="логотип Седона">
+      </a>
     </nav>
   </header>
   <main class="page-form">
     <h1 class="visyally-hidden">Ваш отзыв об отелях Седоны</h1>
-    <section class="review-form">
-      <div class="block-content review-form__block-content">
-        <h2 class="block-content__header">Оставьте свой отзыв</h2>
-        <p class="block-content__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
+    <section class="review">
+        <h2 class="review__title title">Оставьте свой отзыв</h2>
+        <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="review-form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="review-form__block-identify">
+            <p class="review-form__title identify">Представьтесь:</p>
+            <p>
+              <label for="id-name">Имя<sup>*</sup>:</label>
+              <input type="text" id="id-name" name="name" value="Петр" required>
+            </p>
+            <p>
+              <label for="id-surname">Фамилия<sup>*</sup>:</label>
+              <input type="text" id="id-surname" name="surname" value="Иванов" required>
+            </p>  
+            <p>
+              <label for="id-patronymic">Отчество:</label>
+              <input type="text" id="id-patronymic" name="patronymic" value="Александрович">
+            </p>  
+          </div>
+          <div class="review-form__block-contact">
+            <p class="review-form__title contact">Контактная информация:</p>
+            <p><label for="id-tel">Контактный телефон<sup>*</sup>:</label></p>
+            <input type="text" id="id-tel" name="tel" value="Введите телефон" required>
+            <p><label for="id-email">Электронная почта<sup>*</sup>:</label></p>
+            <input type="text" id="id-email" name="email" value="Введите e-mail" required> 
+          </div>
+          <div class="review-form__block-impression">
+            <p class="review-form__title impression">Ваше общее впечатление:</p>
+            <p><input type="radio" id="id-positive" name="impression" value="positive" checked><label for="id-positive">Скорее положительное</label></p>
+            <p><input type="radio" id="id-negative" name="impression" value="negative"><label for="id-negative">Скорее отрицательное</label></p>
+            <p><input type="radio" id="id-no_answer" name="impression" value="no_answer"><label for="id-no_answer">Затрудняюсь ответить</label></p>
+          </div>
+          <div class="review-form__block-attraction">
+            <p class="review-form__title attraction">Ваше общее впечатление:</p>
+            <p><input type="checkbox" id="id-bridge" name="bridge" checked><label for="id-bridge">Мост Дьявола</label></p>
+            <p><input type="checkbox" id="id-mountain" name="mountain" checked><label for="id-mountain">Гора-Колокол</label></p>
+            <p><input type="checkbox" id="id-park" name="park" checked><label for="id-park">Слайд-Парк</label></p>
+            <p><input type="checkbox" id="id-rock" name="rock"><label for="id-rock">Красные скалы</label></p>
+          </div>
+          <div class="review-form__block-emotion">
+            <p class="review-form__title emotion">Опишите свои эмоции:</p>
+            <textarea rows="10" cols="30">Опишите подробно все свои восторги</textarea>
+          </div>
+          <button class="review-form__button" type="submit">Отправить отзыв</button> 
+        </form>
     </section>
   </main>
   <footer class="page-footer">
