@@ -4,35 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>Седона форма отзыва</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Форма отзыва</a>
+            <a class="site-list__link">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </div>
       <a class="page-header__logo">
-        <img class="page-header__logo-img" src="http://placehold.it/102x83" width="102" height="83" alt="логотип Седона">
+        <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
       </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
     </nav>
   </header>
   <main class="page-form">
-    <h1 class="visyally-hidden">Ваш отзыв об отелях Седоны</h1>
+    <div class="banner"><img src="img/text-sedona.svg" alt="Sedona" width="229" height="39"></div>
+    <h1 class="visually-hidden">Ваш отзыв об отелях Седоны</h1>
     <section class="review">
       <h2 class="review__title title">Оставьте свой отзыв</h2>
       <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -74,7 +76,7 @@
         </div>
         <div class="review-form__block-emotion">
           <p class="review-form__title emotion">Опишите свои эмоции:</p>
-          <textarea rows="10" cols="30">Опишите подробно все свои восторги</textarea>
+          <textarea class="review-form__textarea" rows="8" cols="30">Опишите подробно все свои восторги</textarea>
         </div>
         <button class="review-form__button" type="submit">Отправить отзыв</button>
       </form>
@@ -84,9 +86,9 @@
     <span class="page-footer__visit-sedona">#visitSEDONA</span>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--twitter">Twitter</a></li>
-        <li class="social__item"><a class="social__link social__link--facebook">Facebook</a></li>
-        <li class="social__item"><a class="social__link social__link--youtube">YouTube</a></li>
+        <li class="social__item"><a class="social__button social__button--twitter">Twitter</a></li>
+        <li class="social__item"><a class="social__button social__button--facebook">Facebook</a></li>
+        <li class="social__item"><a class="social__button social__button--youtube">YouTube</a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
