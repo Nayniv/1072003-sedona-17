@@ -2,6 +2,8 @@
   color: @text-white;
   background-color: @main-color;
   text-align: center;
+  width: 82%;
+  padding: 40px 30px;
 }
 
 .title--small {
@@ -11,4 +13,58 @@
 .reasons__item {
   text-align: center;
   background-color: @bg-color-grey;
+  padding: 30px 40px;
+}
+
+.reasons__description {
+  padding: 0;
+  margin: 0;
+}
+
+.reasons__title {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .reasons__title-block {
+    width: 33%;
+  }
+
+  .options__list {
+    display: flex;
+    width: 100%;
+  }
+
+  .options__item {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 0 40px;
+  }
+
+  .reasons__info-block-2 {
+    order: 4;
+    width: 60%;
+  }
+
+  .reasons__title-block--reason-2 {
+    width: 30%;
+    order: 5;
+  }
+
+  .reasons__list {
+    display: flex;
+    order: 6;
+  }
+
+  .reasons__item {
+    padding: 0 45px;
+    margin-bottom: 50px;
+  }
 }

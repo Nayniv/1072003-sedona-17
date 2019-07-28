@@ -1,0 +1,164 @@
+.review__title {
+  width: 80%;
+  padding: 0 10%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.review__description {
+  width: 86%;
+  padding: 0 7%;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 47px;
+}
+
+.review-form input {
+  .font(18px, 26px, bold);
+}
+
+.review-form__description--warning {
+  display: none;
+}
+
+.review-form__button {
+  width: 87.5%;
+  margin-left: 6%;
+  padding: 21px 48px 21px 47px;
+  .font(21px, 26px, bold);
+  text-transform: uppercase;
+}
+
+
+@media (min-width: @tablet-width) {
+  .review__title {
+    width: 70%;
+    padding: 0 15%;
+    margin-bottom: 50px;
+  }
+
+  .review__description {
+    width: 58%;
+    padding: 0 21%;
+    margin-bottom: 80px;
+  }
+
+  .review-form {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .review-form__block-impression {
+    order: -1;
+    width: 50%;
+  }
+
+  .review-form__block-identify {
+    width: 50%;
+  }
+
+  .review-form__block-contact {
+    width: 100%;
+
+    .review-form__description {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .review-form__block-attraction {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .review-form__description {
+      width: 50%;
+    }
+  }
+
+  .attraction {
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  .review-form__block-emotion {
+    width: 100%;
+    margin-bottom: 58px;
+
+    .review-form__textarea {
+      width: 80%;
+      margin-left: 8%;
+    }
+  }
+
+  .review-form__button {
+    margin-left: 8%;
+    padding: 20px 75px 20px 64px;
+  }
+
+  .review-form__description--warning {
+    display: block;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .review__title {
+    width: 40%;
+    padding: 0 30%;
+  }
+
+  .review__description {
+    width: 37%;
+    padding: 0 31.5%;
+    margin-bottom: 65px;
+  }
+
+  .review-form {
+    margin-bottom: 66px;
+  }
+
+  .review-form__block-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .review-form__title {
+      width: 100%;
+    }
+
+    .review-form__description {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+    }
+  }
+
+  .review-form__block-attraction {
+    .review-form__description {
+      width: 25%;
+    }
+  }
+
+  .review-form__button {
+    margin-left: 10%;
+    padding: 20px 147px 20px 148px;
+  }
+
+  .review-form__block-emotion {
+    width: 100%;
+  }
+
+  .review-form__textarea {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

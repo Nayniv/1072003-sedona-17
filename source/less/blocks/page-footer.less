@@ -1,4 +1,19 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .page-footer__visit-sedona {
   .font(21px, 26px, bold);
   text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    margin: 0 auto;
+  }
 }
