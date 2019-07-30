@@ -1,0 +1,45 @@
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -27px;
+}
+
+.site-list__item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3.2% 0;
+  margin: 0 auto;
+  background-color: @main-color;
+}
+
+.site-list__link {
+  text-decoration: none;
+  .font(18px, 2.22, bold);
+  color: @text-white;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    width: 20%;
+    background-color: @bg-color;
+  }
+
+  .site-list__link {
+    .font(14px, 26px, bold);
+    color: @title-color;
+  }
+
+  .site-list__item:nth-child(3) {
+    order: 4;
+  }
+
+  .site-list__item:nth-child(4) {
+    order: 5;
+  }
+}
