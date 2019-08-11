@@ -28,9 +28,13 @@
           </li>
           <li class="page-header__logo">
             <a class="page-header__link">
-              <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
+              </picture>
             </a>
-            <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span><img src="img/icon-menu-blue.svg" width="23" height="22"></button>
           </li>
         </ul>
       </nav>
@@ -48,57 +52,69 @@
         <h2 class="visually-hidden">Причины выбрать Седону!</h2>
         <div class="reasons__title-block reasons__title-block--reason-1 reasons__title-block--open">
           <h3 class="reasons__title title title--small">Настоящий городок</h3>
-          <span class="reasons__number">— №1 —</span>
+          <span class="reasons__number">&ndash; №1 &ndash;</span>
           <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="reasons__info-block">
-          <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
+        <div class="reasons__info-block reasons__info-block--1">
+          <!-- <picture>
+            <source media="(min-width: 800px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 512px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+           <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
+          </picture> -->
         </div>
         <div class="options__list">
-          <div class="options__item reasons__item--housing">
+          <div class="options__item options__item--housing">
             <h4 class="options__title title title--housing">Жилье</h4>
             <p class="options__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="options__item reasons__item--souvenirs">
+          <div class="options__item options__item--souvenirs">
             <h4 class="options__title title title--souvenirs">Сувениры</h4>
-            <p class="options__description">Не только китайского, но и местного производства!</p>
+            <p class="options__description">Не только китайского, но&nbsp;и&nbsp;местного производства!</p>
           </div>
-          <div class="options__item reasons__item--food">
+          <div class="options__item options__item--food">
             <h4 class="options__title title title--food">Еда</h4>
             <p class="options__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
         </div>
         <div class="reasons__title-block reasons__title-block--reason-2 reasons__title-block--open">
-          <h3 class="reasons__title title title--small">Там есть Мост Дьявола</h3>
-          <span class="reasons__number">— №2 —</span>
+          <h3 class="reasons__title title title--small">Там есть Мост&nbsp;Дьявола</h3>
+          <span class="reasons__number">&ndash; №2 &ndash;</span>
           <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <div class="reasons__info-block-2">
-          <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Там есть Мост Дьявола">
+        <div class="reasons__info-block reasons__info-block--2">
+          <!-- <picture>
+          <source media="(min-width: 800px)" srcset="img/main-bridge-desktop@1x.jpg">
+          <source media="(min-width: 512px)" srcset="img/main-bridge-tablet@1x.jpg">
+          <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Там есть Мост Дьявола">
+          </picture> -->
         </div>
         <div class="reasons__list">
           <div class="reasons__item reasons__item--3">
             <h4 class="reasons__title title title--3">Небольшая площадь</h4>
-            <span class="reasons__number">— №3 —</span>
+            <span class="reasons__number">&ndash; №3 &ndash;</span>
             <p class="reasons__description">Все интересные места находятся очень близко</p>
           </div>
           <div class="reasons__item reasons__item--4">
             <h4 class="reasons__title title title--4">Красивая дорога</h4>
-            <span class="reasons__number">— №4 —</span>
+            <span class="reasons__number">&ndash; №4 &ndash;</span>
             <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="reasons__item reasons__item--5">
             <h4 class="reasons__title title title--5">Мало туристов</h4>
-            <span class="reasons__number">— №5 —</span>
+            <span class="reasons__number">&ndash; №5 &ndash;</span>
             <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
       </section>
       <section class="search-hotel">
         <h2 class="search-hotel__title title">Заинтересовались?</h2>
-        <p class="search-hotel__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="search-hotel__description description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения гостиниц в седоне</p>
         <a class="search-hotel__link button" href="search-hotel.html">Найти гостиницу</a>
-        <img class="map-img" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img class="search-hotel__map" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
@@ -112,7 +128,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
   </div>

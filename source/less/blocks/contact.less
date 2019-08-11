@@ -1,0 +1,35 @@
+.contact__title {
+  margin-bottom: 23px;
+}
+
+.contact__description {
+  position: relative;
+}
+
+.contact__description label {
+  margin-left: 42px;
+}
+
+.contact__description input {
+  margin-left: 21px;
+  margin-top: 10px;
+  padding: 15px 0 17px 22px;
+}
+
+.contact__description::after {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 58px;
+  top: 35%;
+  right: 6.1%;
+  background: @bg-input-2 url("../img/icon-phone.svg") 50% no-repeat;
+}
+
+.contact__description--email::after {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.contact {
+  margin-bottom: 13px;
+}

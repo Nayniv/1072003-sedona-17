@@ -4,6 +4,32 @@
   background: @main-color url("../img/bg-back-mobile@1x.jpg") 50% no-repeat;
   background-size: cover;
   height: 390px;
+  margin-bottom: 38px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.page-photo .banner,
+.page-form .banner {
+  height: 158px;
+  margin-bottom: 36px;
+
+  img {
+    transform: translateY(-20%);
+  }
+}
+
+.banner::after {
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  bottom: -2px;
+  right: 0;
+  left: 0;
+  content: "";
+  background: url("../img/bg-intro-triangle-mobile.svg") 50% no-repeat;
 }
 
 .banner img {
@@ -12,17 +38,65 @@
 
 @media (min-width: @tablet-width) {
   .banner {
+    width: 100%;
     background: @main-color url("../img/bg-back-tablet@1x.jpg") 50% no-repeat;
     background-size: cover;
     height: 518px;
-    margin-bottom: 73px;
+    margin-bottom: 50px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    img {
+      width: 460px;
+      height: 350px;
+      transform: translateY(-2%);
+    }
+  }
+
+  .page-photo .banner,
+  .page-form .banner {
+    height: 289px;
+    margin-bottom: 75px;
+
+    img {
+      transform: translateY(-12%);
+    }
+  }
+
+  .banner::after {
+    height: 62px;
+    bottom: -3px;
+    background: url("../img/bg-intro-triangle-tablet.svg") 50% no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
   .banner {
+    width: 100%;
     background: @main-color url("../img/bg-back-desktop@1x.jpg") 50% no-repeat;
     background-size: cover;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    &::after {
+      height: 62px;
+      bottom: -3px;
+      background: url("../img/bg-intro-triangle-desktop.svg") 50% no-repeat;
+    }
+  }
+
+  .page-photo .banner,
+  .page-form .banner {
+    height: 301px;
+    margin-bottom: 111px;
+
+    img {
+      transform: translateY(-10%);
+    }
   }
 }

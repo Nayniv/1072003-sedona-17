@@ -1,0 +1,33 @@
+.attraction__title {
+  margin-bottom: 30px;
+}
+
+.attraction__description {
+  position: relative;
+  text-transform: none;
+  .font(18px, 26px, bold);
+  color: @title-color;
+  padding-left: 99px;
+  padding-bottom: 36px;
+}
+
+.attraction__description:last-child {
+  padding-bottom: 23px;
+}
+
+.attraction__description label::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: solid 16px @bg-input;
+  border-radius: 10%;
+  top: -22%;
+  left: 6%;
+  background-color: @bg-input;
+}
+
+.attraction__description input:checked + label::before {
+  width: 24px;
+  background: @bg-input url("../img/icon-tick.svg") 50% no-repeat;
+}

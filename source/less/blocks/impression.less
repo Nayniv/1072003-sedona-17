@@ -1,0 +1,28 @@
+.impression__title {
+  margin-bottom: 36px;
+}
+
+.impression__description {
+  position: relative;
+  text-transform: none;
+  .font(18px, 26px, bold);
+  color: @title-color;
+  padding-left: 99px;
+  padding-bottom: 26px;
+}
+
+.impression__description label::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  top: -27%;
+  left: 6%;
+  border: solid 20px @bg-input;
+  background-color: @bg-input;
+  border-radius: 50%;
+}
+
+.impression__description input:checked + label::before {
+  background-color: @text-color;
+}

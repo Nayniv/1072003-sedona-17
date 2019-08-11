@@ -1,0 +1,36 @@
+.emotion__textarea {
+  border: none;
+  padding-top: 15px;
+  padding-left: 20px;
+  margin-left: 20px;
+  .font(18px, 26px, bold);
+  color: @title-color;
+  background-color: @bg-input;
+}
+
+.emotion {
+  margin-bottom: 57px;
+}
+
+@media (min-width: @tablet-width) {
+  .emotion {
+    width: 100%;
+    margin-bottom: 58px;
+
+    .emotion__textarea {
+      width: 80%;
+      margin-left: 8%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotion {
+    width: 100%;
+  }
+
+  .emotion__textarea {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

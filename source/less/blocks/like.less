@@ -1,0 +1,38 @@
+.like {
+  position: relative;
+  padding-top: 9px;
+}
+
+.like::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 19px;
+  background: url("../img/icon-like.svg") 50% 60% no-repeat;
+  background-size: 100%;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .like {
+    order: 2;
+    align-self: flex-end;
+    text-align: left;
+    margin-right: 0;
+    padding-top: 0;
+    line-height: 0;
+
+    &::before {
+      width: 24px;
+      left: 5%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like::before {
+    background: url("../img/icon-like-white.svg") no-repeat;
+    left: 6%;
+    opacity: 1;
+  }
+}

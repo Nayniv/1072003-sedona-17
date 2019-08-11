@@ -1,14 +1,14 @@
 .review__title {
   width: 80%;
   padding: 0 10%;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   text-align: center;
 }
 
 .review__description {
   width: 86%;
   padding: 0 7%;
-  margin-bottom: 45px;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -17,11 +17,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 47px;
+  margin-bottom: 73px;
 }
 
 .review-form input {
+  border: none;
   .font(18px, 26px, bold);
+  background-color: @bg-color-grey2;
+}
+
+.review-form__block {
+  border-top: 1px solid @bg-color-grey3;
 }
 
 .review-form__description--warning {
@@ -30,8 +36,8 @@
 
 .review-form__button {
   width: 87.5%;
-  margin-left: 6%;
-  padding: 21px 48px 21px 47px;
+  margin: 0 auto;
+  padding: 17px 48px 15px 43px;
   .font(21px, 26px, bold);
   text-transform: uppercase;
 }
@@ -89,16 +95,6 @@
     padding: 0 10%;
   }
 
-  .review-form__block-emotion {
-    width: 100%;
-    margin-bottom: 58px;
-
-    .review-form__textarea {
-      width: 80%;
-      margin-left: 8%;
-    }
-  }
-
   .review-form__button {
     margin-left: 8%;
     padding: 20px 75px 20px 64px;
@@ -151,14 +147,5 @@
   .review-form__button {
     margin-left: 10%;
     padding: 20px 147px 20px 148px;
-  }
-
-  .review-form__block-emotion {
-    width: 100%;
-  }
-
-  .review-form__textarea {
-    width: 80%;
-    margin-left: 10%;
   }
 }
