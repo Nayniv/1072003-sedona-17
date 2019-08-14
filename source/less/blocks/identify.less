@@ -26,3 +26,35 @@
   padding: 15px 0 14px 20px;
   flex-grow: 1;
 }
+
+@media (min-width: @tablet-width) {
+  .identify {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 59px;
+    padding-right: 21px;
+    margin-bottom: 30px;
+
+    &__title {
+      text-align: left;
+      margin-bottom: 60px;
+    }
+  }
+
+  .identify__description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  .identify__description label {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .identify {
+    padding-left: 81px;
+    margin-bottom: 27px;
+  }
+}

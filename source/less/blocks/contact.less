@@ -33,3 +33,128 @@
 .contact {
   margin-bottom: 13px;
 }
+
+@media (min-width: @tablet-width) {
+  .contact {
+    width: 100%;
+    margin-bottom: 9px;
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .contact__title {
+    position: relative;
+    margin-bottom: 26px;
+  }
+
+  .contact__title::before {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 48%;
+    left: 8%;
+    background-color: @bg-input;
+  }
+
+  .contact__title::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 48%;
+    left: 76%;
+    background-color: @bg-input;
+  }
+
+  .contact__description label {
+    margin-left: 82px;
+  }
+
+  .contact__description input {
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 0 17px 22px;
+    width: 76%;
+  }
+
+  .contact__description::after {
+    top: 31%;
+    right: 8%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 21px;
+  }
+
+  .contact__title {
+    width: 80%;
+    padding: 0 10%;
+    margin-bottom: 66px;
+  }
+
+  .contact__title::before {
+    width: 23%;
+    left: 10%;
+  }
+
+  .contact__title::after {
+    width: 23%;
+    left: 67%;
+  }
+
+  .contact__description {
+    display: flex;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contact__description label {
+    margin: 0;
+    margin-right: 16px;
+    box-sizing: border-box;
+    width: 25%;
+  }
+
+  .contact__description--phone label {
+    margin-left: 120px;
+    margin-right: 0;
+    width: 15%;
+  }
+
+  .contact__description input {
+    display: flex;
+    box-sizing: border-box;
+    padding: 13px 0 17px 20px;
+    width: 45%;
+    margin-left: 0;
+    margin-right: 135px;
+    flex-grow: 1;
+  }
+
+  .contact__description::after {
+    top: 13%;
+    right: 13%;
+    height: 56px;
+  }
+
+  .contact__description--email::after {
+    right: 20%;
+  }
+
+  .contact__description--phone span {
+    display: none;
+  }
+}

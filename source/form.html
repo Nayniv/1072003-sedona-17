@@ -13,14 +13,14 @@
   <header class="page-header">
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link">Фото и видео</a>
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Форма отзыва</a>
+          <a class="site-list__link site-list__link--active">Форма отзыва</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -49,25 +49,27 @@
           <p class="review-form__title identify__title">Представьтесь:</p>
           <p class="review-form__description identify__description">
             <label for="id-name">Имя<sup>*</sup>:</label>
-            <input class="review-form-name" type="text" id="id-name" name="name" value="Петр" required>
+            <input type="text" id="id-name" name="name" value="Петр" required>
           </p>
           <p class="review-form__description identify__description">
             <label for="id-surname">Фамилия<sup>*</sup>:</label>
-            <input class="review-form-surname" type="text" id="id-surname" name="surname" value="Иванов" required>
+            <input type="text" id="id-surname" name="surname" value="Иванов" required>
           </p>
           <p class="review-form__description identify__description">
             <label for="id-patronymic">Отчество:</label>
-            <input class="review-form-patronymic" type="text" id="id-patronymic" name="patronymic" value="Александрович">
+            <input type="text" id="id-patronymic" name="patronymic" value="Александрович">
           </p>
         </div>
         <div class="review-form__block contact">
           <p class="review-form__title contact__title">Контактная информация:</p>
           <p class="review-form__description contact__description contact__description--phone">
-            <label for="id-tel">Контактный телефон<sup>*</sup>:</label>
-            <input type="tel" id="id-tel" name="tel" value="Введите телефон" required></p>
+            <label for="id-tel"><span>Контактный</span> телефон<sup>*</sup>:</label>
+            <input type="tel" id="id-tel" name="tel" value="Введите телефон" required>
+          </p>
           <p class="review-form__description contact__description contact__description--email">
             <label for="id-email">Электронная почта<sup>*</sup>:</label>
-            <input type="email" id="id-email" name="email" value="Введите e-mail" required></p>
+            <input type="email" id="id-email" name="email" value="Введите e-mail" required>
+          </p>
         </div>
         <div class="review-form__block impression">
           <p class="review-form__title impression__title">Ваше общее впечатление:</p>
@@ -77,10 +79,10 @@
         </div>
         <div class="review-form__block attraction">
           <p class="review-form__title attraction__title">Посещенные достопримечательности:</p>
-          <p class="review-form__description attraction__description"><input class="visually-hidden" type="checkbox" id="id-bridge" name="bridge" checked><label for="id-bridge">Мост Дьявола</label></p>
-          <p class="review-form__description attraction__description"><input class="visually-hidden" type="checkbox" id="id-mountain" name="mountain" checked><label for="id-mountain">Гора-Колокол</label></p>
-          <p class="review-form__description attraction__description"><input class="visually-hidden" type="checkbox" id="id-park" name="park" checked><label for="id-park">Слайд-парк</label></p>
-          <p class="review-form__description attraction__description"><input class="visually-hidden" type="checkbox" id="id-rock" name="rock"><label for="id-rock">Красные скалы</label></p>
+          <p class="review-form__description attraction__description attraction__description--bridge"><input class="visually-hidden" type="checkbox" id="id-bridge" name="bridge" checked><label for="id-bridge">Мост Дьявола</label></p>
+          <p class="review-form__description attraction__description attraction__description--mountain"><input class="visually-hidden" type="checkbox" id="id-mountain" name="mountain" checked><label for="id-mountain">Гора-Колокол</label></p>
+          <p class="review-form__description attraction__description attraction__description--park"><input class="visually-hidden" type="checkbox" id="id-park" name="park" checked><label for="id-park">Слайд-парк</label></p>
+          <p class="review-form__description attraction__description attraction__description--rock"><input class="visually-hidden" type="checkbox" id="id-rock" name="rock"><label for="id-rock">Красные скалы</label></p>
         </div>
         <div class="review-form__block emotion">
           <p class="review-form__title emotion__title">Опишите свои эмоции:</p>

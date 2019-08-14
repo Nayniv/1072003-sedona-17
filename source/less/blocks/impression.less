@@ -14,15 +14,61 @@
 .impression__description label::before {
   position: absolute;
   content: "";
-  width: 19px;
-  height: 19px;
-  top: -27%;
+  width: 21px;
+  height: 21px;
+  top: -25%;
   left: 6%;
-  border: solid 20px @bg-input;
+  border: solid 18px @bg-input;
   background-color: @bg-input;
   border-radius: 50%;
 }
 
 .impression__description input:checked + label::before {
   background-color: @text-color;
+}
+
+@media (min-width: @tablet-width) {
+  .impression {
+    position: relative;
+    order: -1;
+    width: 50%;
+
+    &__title {
+      padding: 0 5px 0 13px;
+      margin-bottom: 73px;
+    }
+
+    &__description {
+      padding-left: 135px;
+      padding-bottom: 34px;
+    }
+  }
+
+  .impression__description label::before {
+    left: 15.5%;
+  }
+
+  .impression::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 80%;
+    top: 7%;
+    left: 100%;
+    background-color: @bg-input;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression__title {
+    padding-left: 79px;
+  }
+
+  .impression__description {
+    padding-left: 200px;
+  }
+
+  .impression__description label::before {
+    left: 21%;
+  }
 }

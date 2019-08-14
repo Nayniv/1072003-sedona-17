@@ -31,3 +31,120 @@
   width: 24px;
   background: @bg-input url("../img/icon-tick.svg") 50% no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .attraction {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    &__description {
+      box-sizing: border-box;
+      width: 50%;
+      padding-bottom: 26px;
+      padding-left: 110px;
+    }
+  }
+
+  .attraction__description--bridge,
+  .attraction__description--park {
+    padding-left: 234px;
+  }
+
+  .attraction__description label::before {
+    left: 8%;
+  }
+
+  .attraction__description--bridge label::before {
+    left: 41%;
+  }
+
+  .attraction__description--park label::before {
+    left: 41%;
+  }
+
+  .attraction__title {
+    position: relative;
+    width: 60%;
+    padding: 0 25%;
+    margin-bottom: 37px;
+  }
+
+  .attraction__title::before {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 48%;
+    left: 8%;
+    background-color: @bg-input;
+  }
+
+  .attraction__title::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 48%;
+    left: 76%;
+    background-color: @bg-input;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attraction {
+    padding: 0 10%;
+    margin-bottom: 19px;
+  }
+
+  .attraction__title {
+    width: 30%;
+    padding: 0 34%;
+    margin-bottom: 38px;
+  }
+
+  .attraction__title::before {
+    width: 28%;
+    left: -1%;
+  }
+
+  .attraction__title::after {
+    width: 28%;
+    left: 71%;
+  }
+
+  .attraction__description {
+    width: 25%;
+  }
+
+
+  .attraction__description--bridge {
+    padding-left: 81px;
+  }
+
+  .attraction__description--bridge label::before {
+    left: 0%;
+  }
+
+  .attraction__description--park {
+    padding-left: 119px;
+  }
+
+  .attraction__description--park label::before {
+    left: 16%;
+  }
+
+  .attraction__description--mountain {
+    padding-left: 102px;
+  }
+
+  .attraction__description--rock {
+    padding-left: 116px;
+  }
+
+  .attraction__description--rock label::before {
+    left: 15%;
+  }
+}

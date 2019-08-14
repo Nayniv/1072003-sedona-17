@@ -15,22 +15,62 @@
 @media (min-width: @tablet-width) {
   .emotion {
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 53px;
+  }
 
-    .emotion__textarea {
-      width: 80%;
-      margin-left: 8%;
-    }
+  .emotion__textarea {
+    width: 80%;
+    margin-left: 8%;
+    padding-right: 10px;
+    padding-bottom: 14px;
+  }
+
+  .emotion__title {
+    position: relative;
+    margin-bottom: 57px;
+  }
+
+  .emotion__title::before {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 48%;
+    left: 8%;
+    background-color: @bg-input;
+  }
+
+  .emotion__title::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 48%;
+    left: 76%;
+    background-color: @bg-input;
   }
 }
 
 @media (min-width: @desktop-width) {
   .emotion {
-    width: 100%;
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  .emotion__title::before {
+    width: 28%;
+    left: 0%;
+  }
+
+  .emotion__title::after {
+    width: 28%;
+    left: 71%;
   }
 
   .emotion__textarea {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
   }
 }
