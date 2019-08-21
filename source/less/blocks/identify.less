@@ -1,9 +1,9 @@
 .identify {
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 
 .identify__title {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .identify__description {
@@ -12,7 +12,7 @@
   margin: 0 auto;
   padding: 0;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .identify__description label {
@@ -23,17 +23,25 @@
   min-width: 60%;
   box-sizing: border-box;
   margin-left: auto;
-  padding: 15px 0 14px 20px;
+  padding: 14px 0 14px 21px;
   flex-grow: 1;
+}
+
+.identify__description input:hover {
+  background-color: @bg-input-3;
+}
+
+.identify__description input:focus {
+  border: solid 4px @bg-input-3;
+  background-color: @bg-color;
 }
 
 @media (min-width: @tablet-width) {
   .identify {
     box-sizing: border-box;
     width: 50%;
-    padding-left: 59px;
-    padding-right: 21px;
-    margin-bottom: 30px;
+    padding-left: 58px;
+    margin-bottom: 26px;
 
     &__title {
       text-align: left;
@@ -42,19 +50,21 @@
   }
 
   .identify__description {
+    width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .identify__description label {
+    align-self: center;
     margin-right: 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .identify {
-    padding-left: 81px;
-    margin-bottom: 27px;
+    padding-left: 82px;
+    margin-bottom: 24px;
   }
 }

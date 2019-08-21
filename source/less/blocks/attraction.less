@@ -1,5 +1,5 @@
 .attraction__title {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .attraction__description {
@@ -27,6 +27,24 @@
   background-color: @bg-input;
 }
 
+.attraction__description label:hover::before {
+  background-color: @bg-input-3;
+  border: solid 16px @bg-input-3;
+}
+
+.attraction__description label:active::before {
+  background-color: @bg-input-4;
+  border: solid 16px @bg-input-4;
+}
+
+.attraction__description input:checked + label:hover::before {
+  background-color: @bg-input-3;
+}
+
+.attraction__description input:checked + label:active::before {
+  background-color: @bg-input-4;
+}
+
 .attraction__description input:checked + label::before {
   width: 24px;
   background: @bg-input url("../img/icon-tick.svg") 50% no-repeat;
@@ -37,8 +55,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 
     &__description {
       box-sizing: border-box;
@@ -50,69 +67,65 @@
 
   .attraction__description--bridge,
   .attraction__description--park {
-    padding-left: 234px;
+    padding-left: 175px;
   }
 
   .attraction__description label::before {
-    left: 8%;
+    left: 9%;
   }
 
-  .attraction__description--bridge label::before {
-    left: 41%;
-  }
-
+  .attraction__description--bridge label::before,
   .attraction__description--park label::before {
-    left: 41%;
+    left: 30%;
   }
 
   .attraction__title {
     position: relative;
     width: 60%;
     padding: 0 25%;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   .attraction__title::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     top: 48%;
-    left: 8%;
+    left: 0%;
     background-color: @bg-input;
   }
 
   .attraction__title::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     top: 48%;
-    left: 76%;
+    right: 0%;
     background-color: @bg-input;
   }
 }
 
 @media (min-width: @desktop-width) {
   .attraction {
-    padding: 0 10%;
-    margin-bottom: 19px;
+    margin-bottom: 17px;
   }
 
   .attraction__title {
     width: 30%;
-    padding: 0 34%;
+    padding: 0 35.9%;
     margin-bottom: 38px;
   }
 
   .attraction__title::before {
-    width: 28%;
-    left: -1%;
+    width: 30%;
+    left: 0%;
   }
 
   .attraction__title::after {
-    width: 28%;
-    left: 71%;
+    width: 30%;
+    right: 0%;
   }
 
   .attraction__description {

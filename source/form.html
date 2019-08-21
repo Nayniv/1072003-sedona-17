@@ -25,8 +25,8 @@
         <li class="site-list__item">
           <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
-        <li class="page-header__logo">
-          <a class="page-header__link" href="index.html">
+        <li class="page-header__logo site-list__item">
+          <a class="page-header__link" href="index.html" aria-label="Переход на главную страницу">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -43,7 +43,7 @@
     <h1 class="visually-hidden">Ваш отзыв об отелях Седоны</h1>
     <section class="review">
       <h2 class="review__title title">Оставьте свой отзыв</h2>
-      <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="review__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="review-form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="review-form__block identify">
           <p class="review-form__title identify__title">Представьтесь:</p>
@@ -97,16 +97,27 @@
     <span class="page-footer__visit-sedona">#visitSEDONA</span>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a class="social__button social__button--twitter button" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
-        <li class="social__item"><a class="social__button social__button--facebook button" href="https://facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social__item"><a class="social__button social__button--youtube button" href="https://YouTube.com/"><span class="visually-hidden">YouTube</span></a></li>
+        <li class="social__item"><a class="social__button social__button--twitter button" href="https://twitter.com/" aria-label="Переход на страницу Twitter"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social__item"><a class="social__button social__button--facebook button" href="https://facebook.com/" aria-label="Переход на страницу Facebook"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social__item"><a class="social__button social__button--youtube button" href="https://YouTube.com/" aria-label="Переход на страницу YouTube"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу HTML Academy"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
+  <!--  <section class="modal modal-review">
+   <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+   <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+     В ближайшее время мы опубликуем его на сайте.</p>
+   <button class="modal-close button" type="button">Закрыть окно</button>
+ </section>
+ <section class="modal modal-error">
+   <h2 class="modal__title title">Что-то пошло не так!</h2>
+   <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+   <button class="modal-close button" type="button" aria-label="Закрыть сообщение об ошибке">OK</button>
+ </section> -->
 </body>
 
 </html>

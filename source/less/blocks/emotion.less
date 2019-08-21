@@ -2,6 +2,7 @@
   border: none;
   padding-top: 15px;
   padding-left: 20px;
+  padding-bottom: 14px;
   margin-left: 20px;
   .font(18px, 26px, bold);
   color: @title-color;
@@ -9,7 +10,7 @@
 }
 
 .emotion {
-  margin-bottom: 57px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,9 +20,10 @@
   }
 
   .emotion__textarea {
-    width: 80%;
-    margin-left: 8%;
-    padding-right: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
     padding-bottom: 14px;
   }
 
@@ -33,38 +35,37 @@
   .emotion__title::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     top: 48%;
-    left: 8%;
+    left: 0%;
     background-color: @bg-input;
   }
 
   .emotion__title::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     top: 48%;
-    left: 76%;
+    right: 0%;
     background-color: @bg-input;
   }
 }
 
 @media (min-width: @desktop-width) {
   .emotion {
-    width: 80%;
-    padding: 0 10%;
+    width: 100%;
   }
 
   .emotion__title::before {
-    width: 28%;
+    width: 30%;
     left: 0%;
   }
 
   .emotion__title::after {
-    width: 28%;
-    left: 71%;
+    width: 30%;
+    right: 0%;
   }
 
   .emotion__textarea {

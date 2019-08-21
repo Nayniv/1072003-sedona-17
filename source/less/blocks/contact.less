@@ -37,7 +37,7 @@
 @media (min-width: @tablet-width) {
   .contact {
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
 
     &__description {
       display: flex;
@@ -53,38 +53,38 @@
   .contact__title::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     top: 48%;
-    left: 8%;
+    left: 0%;
     background-color: @bg-input;
   }
 
   .contact__title::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 19%;
     height: 1px;
     top: 48%;
-    left: 76%;
+    right: 0%;
     background-color: @bg-input;
   }
 
   .contact__description label {
-    margin-left: 82px;
+    margin-left: 22px;
   }
 
   .contact__description input {
-    margin-left: 60px;
+    margin-left: 0;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     padding: 15px 0 17px 22px;
-    width: 76%;
+    width: 90%;
   }
 
   .contact__description::after {
     top: 31%;
-    right: 8%;
+    right: 0%;
   }
 }
 
@@ -96,19 +96,18 @@
   }
 
   .contact__title {
-    width: 80%;
-    padding: 0 10%;
+    width: 100%;
     margin-bottom: 66px;
   }
 
   .contact__title::before {
-    width: 23%;
-    left: 10%;
+    width: 30%;
+    left: 0%;
   }
 
   .contact__title::after {
-    width: 23%;
-    left: 67%;
+    width: 30%;
+    right: 0%;
   }
 
   .contact__description {
@@ -129,9 +128,12 @@
   }
 
   .contact__description--phone label {
-    margin-left: 120px;
-    margin-right: 0;
+    margin-right: 3%;
     width: 15%;
+  }
+
+  .contact__description--phone input {
+    margin-right: 135px;
   }
 
   .contact__description input {
@@ -140,18 +142,21 @@
     padding: 13px 0 17px 20px;
     width: 45%;
     margin-left: 0;
-    margin-right: 135px;
     flex-grow: 1;
+  }
+
+  .contact__description--email label {
+    width: 31%;
   }
 
   .contact__description::after {
     top: 13%;
-    right: 13%;
+    right: 16%;
     height: 56px;
   }
 
   .contact__description--email::after {
-    right: 20%;
+    right: 0%;
   }
 
   .contact__description--phone span {

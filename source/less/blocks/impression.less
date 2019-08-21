@@ -8,7 +8,7 @@
   .font(18px, 26px, bold);
   color: @title-color;
   padding-left: 99px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
 }
 
 .impression__description label::before {
@@ -23,8 +23,26 @@
   border-radius: 50%;
 }
 
+.impression__description label:hover::before {
+  background-color: @bg-input-3;
+  border: solid 18px @bg-input-3;
+}
+
+.impression__description label:active::before {
+  background-color: @bg-input-4;
+  border: solid 18px  @bg-input-4;
+}
+
 .impression__description input:checked + label::before {
   background-color: @text-color;
+}
+
+.impression__description input:checked + label:hover::before {
+  background-color: @text-color;
+}
+
+.impression__description input:checked + label:active::before {
+  background-color: @bg-input-5;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,18 +52,18 @@
     width: 50%;
 
     &__title {
-      padding: 0 5px 0 13px;
+      text-align: left;
       margin-bottom: 73px;
     }
 
     &__description {
-      padding-left: 135px;
+      padding-left: 76px;
       padding-bottom: 34px;
     }
   }
 
   .impression__description label::before {
-    left: 15.5%;
+    left: 0%;
   }
 
   .impression::after {
@@ -61,14 +79,14 @@
 
 @media (min-width: @desktop-width) {
   .impression__title {
-    padding-left: 79px;
+    padding-left: 81px;
   }
 
   .impression__description {
-    padding-left: 200px;
+    padding-left: 81px;
   }
 
   .impression__description label::before {
-    left: 21%;
+    left: 1.3%;
   }
 }

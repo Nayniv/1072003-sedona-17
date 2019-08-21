@@ -1,86 +1,32 @@
 .review__title {
   width: 80%;
-  padding: 0 10%;
-  margin-bottom: 23px;
+  padding: 0 10.3%;
+  margin-bottom: 27px;
   text-align: center;
 }
 
 .review__description {
-  width: 86%;
-  padding: 0 7%;
-  margin-bottom: 14px;
+  width: 90%;
+  padding: 0 5%;
+  margin-bottom: 17px;
   text-align: center;
-}
-
-.review-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 73px;
-}
-
-.review-form input {
-  border: none;
-  .font(18px, 26px, bold);
-  background-color: @bg-color-grey2;
-}
-
-.review-form__block {
-  border-top: 1px solid @bg-color-grey3;
-}
-
-.review-form__description--warning {
-  display: none;
-}
-
-.review-form__button {
-  width: 87.5%;
-  margin: 0 auto;
-  padding: 17px 48px 15px 43px;
-  .font(21px, 26px, bold);
-  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 @media (min-width: @tablet-width) {
   .review__title {
     width: 68%;
-    padding: 0 16%;
-    margin-bottom: 29px;
+    padding: 0 14% 0 16%;
+    margin-bottom: 30px;
     .font(30px, 26px, bold);
   }
 
   .review__description {
-    width: 57%;
-    padding: 0 21.5%;
-    margin-bottom: 51px;
-  }
-
-  .review-form {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 97px;
-  }
-
-  .review-form__block {
-    border: none;
-  }
-
-  .review-form__button {
-    width: 42%;
-    margin-left: 8%;
-    padding: 17px 13px 15px 0;
-  }
-
-  .review-form__description--warning {
-    display: block;
-    align-self: center;
-    margin-right: 58px;
-    padding-top: 5px;
-  }
-
-  .review-form__title {
-    .font(21px, 26px, bold);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 164px 0 160px;
+    margin-bottom: 53px;
   }
 }
 
@@ -92,44 +38,8 @@
   }
 
   .review__description {
-    width: 37%;
-    padding: 0 31.5%;
-    margin-bottom: 36px;
-  }
-
-  .review-form {
-    margin-bottom: 102px;
-  }
-
-  .review-form__block-contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .review-form__title {
-      width: 100%;
-    }
-
-    .review-form__description {
-      display: flex;
-      flex-direction: row;
-      width: 50%;
-    }
-  }
-
-  .review-form__block-attraction {
-    .review-form__description {
-      width: 25%;
-    }
-  }
-
-  .review-form__button {
-    width: 40%;
-    margin-left: 10%;
-    padding: 16px 147px 16px 148px;
-  }
-
-  .review-form__description--warning {
-    margin-right: 120px;
+    width: 100%;
+    padding: 0 380px 0 379px;
+    margin-bottom: 39px;
   }
 }
