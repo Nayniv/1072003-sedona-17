@@ -1,5 +1,5 @@
 .options__list {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
 .options__title {
@@ -12,7 +12,7 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10px 0 69px;
+  padding: 0 10px 0 71px;
 }
 
 .options__description {
@@ -57,14 +57,12 @@
   .options__item {
     box-sizing: border-box;
     width: 33%;
-    padding: 132px 0 40px 8px;
+    padding: 130px 0 40px 7px;
     text-align: center;
   }
 
   .options__title {
-    .font(21px;
-    26px;
-    bold);
+    .font(21px, 26px, bold);
     margin-bottom: 21px;
   }
 
@@ -72,13 +70,17 @@
     order: 2;
 
     .options__description {
-      padding-left: 43px;
+      padding-left: 46px;
       padding-right: 44px;
     }
   }
 
   .options__item--souvenirs {
     order: 3;
+
+    & br {
+      display: none;
+    }
 
     .options__description {
       padding-left: 37px;
@@ -96,9 +98,9 @@
   .options__item::before {
     width: 100%;
     height: 26%;
-    left: 2%;
-    top: 19%;
-    background-size: 29% 100%;
+    left: 1%;
+    top: 18%;
+    background-size: 30% 100%;
   }
 
   .options__item--souvenirs::before {
@@ -106,7 +108,8 @@
   }
 
   .options__item--food::before {
-    background-size: 29% 100%;
+    left: 2%;
+    background-size: 30% 100%;
   }
 }
 
@@ -116,18 +119,33 @@
     height: 25%;
   }
 
+  .options__item--food::before {
+    top: 22%;
+    left: 3%;
+    height: 24%;
+  }
+
+  .options__item--souvenirs::before {
+    left: 2%;
+  }
+
+  .options__item {
+    padding-top: 131px;
+    padding-left: 8px;
+  }
+
   .options__item--souvenirs {
     .options__title {
       padding-left: 10px;
     }
 
     .options__description {
-      padding-left: 82px;
+      padding-left: 84px;
       padding-right: 70px;
     }
   }
 
   .options__list {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
   }
 }

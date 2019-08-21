@@ -19,7 +19,7 @@
 
 .info__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   padding: 0;
 }
 
@@ -28,16 +28,21 @@
   padding: 0;
 }
 
-
 @media (min-width: @tablet-width) {
   .info {
     width: 70%;
-    padding: 0 15%;
+    padding: 0 15% 0 15%;
     margin-bottom: 50px;
   }
 
+  .info__description {
+    letter-spacing: 0.1px;
+  }
+
   .info__title {
-    .font(21px; 26px; bold);
+    .font(21px;
+    26px;
+    bold);
   }
 }
 
@@ -45,6 +50,10 @@
   .info {
     width: 46%;
     padding: 0 27%;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
+  }
+
+  .info__description {
+    letter-spacing: 0.12px;
   }
 }
