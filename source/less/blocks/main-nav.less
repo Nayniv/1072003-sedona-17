@@ -18,6 +18,36 @@
   border: none;
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 64px;
+  height: 55px;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 64px;
+    height: 55px;
+
+    background: url("../img/icon-cross.svg") 50% no-repeat;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
