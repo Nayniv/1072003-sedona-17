@@ -1,0 +1,93 @@
+.impression__title {
+  margin-bottom: 36px;
+}
+
+.impression__description {
+  position: relative;
+  text-transform: none;
+  .font(18px, 26px, bold);
+  color: @title-color;
+  padding-left: 99px;
+  padding-bottom: 25px;
+}
+
+.impression__description label::before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 21px;
+  top: -25%;
+  left: 6%;
+  border: solid 18px @bg-input;
+  background-color: @bg-input;
+  border-radius: 50%;
+}
+
+.impression__description label:hover::before {
+  background-color: @bg-input-3;
+  border: solid 18px @bg-input-3;
+}
+
+.impression__description label:active::before {
+  background-color: @bg-input-4;
+  border: solid 18px  @bg-input-4;
+}
+
+.impression__description input:checked + label::before {
+  background-color: @text-color;
+}
+
+.impression__description input:checked + label:hover::before {
+  background-color: @text-color;
+}
+
+.impression__description input:checked + label:active::before {
+  background-color: @bg-input-5;
+}
+
+@media (min-width: @tablet-width) {
+  .impression {
+    box-sizing: border-box;
+    position: relative;
+    order: -1;
+    width: 50%;
+
+    &__title {
+      text-align: left;
+      margin-bottom: 73px;
+    }
+
+    &__description {
+      padding-left: 76px;
+      padding-bottom: 34px;
+    }
+  }
+
+  .impression__description label::before {
+    left: 0%;
+  }
+
+  .impression::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 80%;
+    top: 7%;
+    left: 100%;
+    background-color: @bg-input;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression__title {
+    padding-left: 81px;
+  }
+
+  .impression__description {
+    padding-left: 81px;
+  }
+
+  .impression__description label::before {
+    left: 1.3%;
+  }
+}

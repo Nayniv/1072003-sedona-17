@@ -1,0 +1,151 @@
+.options__list {
+  margin-bottom: 38px;
+}
+
+.options__title {
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.options__item {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 0 71px;
+}
+
+.options__description {
+  margin: 0;
+  padding: 0;
+}
+
+.options__item::before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 50%;
+  left: 0%;
+  top: -15%;
+  background: transparent url("../img/icon-house.svg") 50% no-repeat;
+  background-size: 47% 100%;
+}
+
+.options__item--souvenirs::before {
+  background: transparent url("../img/icon-gift.svg") 51% no-repeat;
+  background-size: 47% 100%;
+}
+
+.options__item--food {
+  .options__description {
+    padding-right: 30px;
+  }
+}
+
+.options__item--food::before {
+  background: transparent url("../img/icon-burger.svg") 48% no-repeat;
+  background-size: 47% 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .options__list {
+    display: flex;
+    width: 100%;
+    margin-bottom: 21px;
+  }
+
+  .options__item {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 130px 0 40px 7px;
+    text-align: center;
+  }
+
+  .options__title {
+    .font(21px, 26px, bold);
+    margin-bottom: 21px;
+  }
+
+  .options__item--food {
+    order: 2;
+
+    .options__description {
+      padding-left: 46px;
+      padding-right: 44px;
+    }
+  }
+
+  .options__item--souvenirs {
+    order: 3;
+
+    & br {
+      display: none;
+    }
+
+    .options__description {
+      padding-left: 37px;
+      padding-right: 33px;
+    }
+  }
+
+  .options__item--housing {
+    .options__description {
+      padding-left: 38px;
+      padding-right: 43px;
+    }
+  }
+
+  .options__item::before {
+    width: 100%;
+    height: 26%;
+    left: 1%;
+    top: 18%;
+    background-size: 30% 100%;
+  }
+
+  .options__item--souvenirs::before {
+    background-size: 25% 100%;
+  }
+
+  .options__item--food::before {
+    left: 2%;
+    background-size: 30% 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options__item::before {
+    top: 21%;
+    height: 25%;
+  }
+
+  .options__item--food::before {
+    top: 22%;
+    left: 3%;
+    height: 24%;
+  }
+
+  .options__item--souvenirs::before {
+    left: 2%;
+  }
+
+  .options__item {
+    padding-top: 131px;
+    padding-left: 8px;
+  }
+
+  .options__item--souvenirs {
+    .options__title {
+      padding-left: 10px;
+    }
+
+    .options__description {
+      padding-left: 84px;
+      padding-right: 70px;
+    }
+  }
+
+  .options__list {
+    margin-bottom: 42px;
+  }
+}

@@ -1,0 +1,164 @@
+.attraction__title {
+  margin-bottom: 31px;
+}
+
+.attraction__description {
+  position: relative;
+  text-transform: none;
+  .font(18px, 26px, bold);
+  color: @title-color;
+  padding-left: 99px;
+  padding-bottom: 36px;
+}
+
+.attraction__description:last-child {
+  padding-bottom: 23px;
+}
+
+.attraction__description label::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: solid 16px @bg-input;
+  border-radius: 10%;
+  top: -22%;
+  left: 6%;
+  background-color: @bg-input;
+}
+
+.attraction__description label:hover::before {
+  background-color: @bg-input-3;
+  border: solid 16px @bg-input-3;
+}
+
+.attraction__description label:active::before {
+  background-color: @bg-input-4;
+  border: solid 16px @bg-input-4;
+}
+
+.attraction__description input:checked + label:hover::before {
+  background-color: @bg-input-3;
+}
+
+.attraction__description input:checked + label:active::before {
+  background-color: @bg-input-4;
+}
+
+.attraction__description input:checked + label::before {
+  width: 24px;
+  background: @bg-input url("../img/icon-tick.svg") 50% no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .attraction {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+
+    &__description {
+      box-sizing: border-box;
+      width: 50%;
+      padding-bottom: 26px;
+      padding-left: 110px;
+    }
+  }
+
+  .attraction__description--bridge,
+  .attraction__description--park {
+    padding-left: 175px;
+  }
+
+  .attraction__description label::before {
+    left: 9%;
+  }
+
+  .attraction__description--bridge label::before,
+  .attraction__description--park label::before {
+    left: 30%;
+  }
+
+  .attraction__title {
+    position: relative;
+    width: 60%;
+    padding: 0 25%;
+    margin-bottom: 38px;
+  }
+
+  .attraction__title::before {
+    position: absolute;
+    content: "";
+    width: 19%;
+    height: 1px;
+    top: 48%;
+    left: 0%;
+    background-color: @bg-input;
+  }
+
+  .attraction__title::after {
+    position: absolute;
+    content: "";
+    width: 19%;
+    height: 1px;
+    top: 48%;
+    right: 0%;
+    background-color: @bg-input;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attraction {
+    margin-bottom: 17px;
+  }
+
+  .attraction__title {
+    width: 30%;
+    padding: 0 35.9%;
+    margin-bottom: 38px;
+  }
+
+  .attraction__title::before {
+    width: 30%;
+    left: 0%;
+  }
+
+  .attraction__title::after {
+    width: 30%;
+    right: 0%;
+  }
+
+  .attraction__description {
+    width: 25%;
+  }
+
+
+  .attraction__description--bridge {
+    padding-left: 81px;
+  }
+
+  .attraction__description--bridge label::before {
+    left: 0%;
+  }
+
+  .attraction__description--park {
+    padding-left: 119px;
+  }
+
+  .attraction__description--park label::before {
+    left: 16%;
+  }
+
+  .attraction__description--mountain {
+    padding-left: 102px;
+  }
+
+  .attraction__description--rock {
+    padding-left: 116px;
+  }
+
+  .attraction__description--rock label::before {
+    left: 15%;
+  }
+}

@@ -1,9 +1,14 @@
 .search-hotel {
   text-align: center;
   margin-bottom: 10px;
+
+  & iframe {
+    width: 100%;
+  }
 }
 
 .search-hotel__title {
+  .font(21px, 26px, bold);
   width: 80%;
   padding: 0 10%;
 }
@@ -11,55 +16,103 @@
 .search-hotel__description {
   width: 86%;
   padding: 0 7%;
+  margin-bottom: 36px;
+  line-height: 24px;
 }
 
 .search-hotel__link {
   text-decoration: none;
   .font(21px, 26px, bold);
-  color: @text-white;
-  background-color: @main-color;
   display: block;
   text-align: center;
-  box-sizing: border-box;
-  width: 80%;
-  padding: 17px 10%;
-  margin-left: 10%;
+  width: 88%;
+  padding: 16px 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 49px;
+}
+
+.search-hotel__map {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 36px;
+  background: url("../img/bg-map-mobile@1x.jpg");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.search-hotel__map::before {
+  position: absolute;
+  content: "";
+  top: 46%;
+  left: 46%;
+  width: 27px;
+  height: 27px;
+  background: url("../img/icon-map-marker.svg") 50% no-repeat;
+  background-size: 100%;
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {
   .search-hotel {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .search-hotel__title {
     width: 50%;
     padding: 0 25%;
+    .font(30px, 26px, bold);
+    margin-bottom: 31px;
   }
 
   .search-hotel__description {
-    width: 50%;
-    padding: 0 25%;
+    width: 57%;
+    padding: 0 21.5% 0 21.5%;
+    .font(14px, 24px);
+    margin-bottom: 40px;
   }
 
   .search-hotel__link {
     width: 458px;
-    margin-left: 20%;
+    margin-bottom: 59px;
   }
 
-  .map-img {
-    width: 100%;
+  .search-hotel__map {
+    background: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .search-hotel__map::before {
+    left: 48%;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .search-hotel {
+  .search-hotel__description {
     width: 40%;
     padding: 0 30%;
+    margin-bottom: 46px;
   }
 
   .search-hotel__link {
-    width: 458px;
-    margin-left: 14%;
+    margin-bottom: 66px;
+  }
+
+  .search-hotel__map {
+    background: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+
+  .search-hotel__map::before {
+    left: 49%;
   }
 }
