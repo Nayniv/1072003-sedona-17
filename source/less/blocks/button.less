@@ -3,11 +3,17 @@
   color: @text-white;
   border: none;
 
+  &:focus,
   &:hover {
     background-color: @button-hover;
   }
 
   &:active {
     background-color: @button-down;
+    color: @white-30;
+  }
+
+  &:disabled {
+    background-color: @button-disabled;
   }
 }

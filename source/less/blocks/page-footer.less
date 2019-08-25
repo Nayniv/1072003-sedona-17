@@ -8,12 +8,26 @@
   .font(21px, 26px, bold);
   text-align: center;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    width: 100%;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
+  }
+
+  .page-footer__visit-sedona {
+    width: 33.3%;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__visit-sedona {
+    box-sizing: border-box;
+    padding-right: 23px;
   }
 }

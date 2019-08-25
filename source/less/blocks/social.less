@@ -11,8 +11,8 @@
 }
 
 .social__item {
-  margin: 0 5px;
-  margin-bottom: 50px;
+  margin: 0 3px;
+  margin-bottom: 43px;
   padding: 0;
 }
 
@@ -23,4 +23,32 @@
 
   width: 46px;
   height: 48px;
+}
+
+.social__button::before {
+  position: absolute;
+  content: "";
+  top: 37%;
+  left: 30%;
+  width: 18px;
+  height: 14px;
+}
+
+.social__button--twitter {
+  background: transparent url("../img/icon-twitter.svg") 50% no-repeat;
+}
+
+.social__button--facebook {
+  background: transparent url("../img/icon-facebook.svg") 50% no-repeat;
+}
+
+.social__button--youtube {
+  background: transparent url("../img/icon-youtube.svg") 50% no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    width: 33.3%;
+    margin-left: 76px;
+  }
 }

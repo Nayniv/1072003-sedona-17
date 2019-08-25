@@ -1,0 +1,77 @@
+.emotion__textarea {
+  border: none;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+  margin-left: 20px;
+  .font(18px, 26px, bold);
+  color: @title-color;
+  background-color: @bg-input;
+}
+
+.emotion {
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .emotion {
+    width: 100%;
+    margin-bottom: 53px;
+  }
+
+  .emotion__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    padding-bottom: 14px;
+  }
+
+  .emotion__title {
+    position: relative;
+    margin-bottom: 57px;
+  }
+
+  .emotion__title::before {
+    position: absolute;
+    content: "";
+    width: 19%;
+    height: 1px;
+    top: 48%;
+    left: 0%;
+    background-color: @bg-input;
+  }
+
+  .emotion__title::after {
+    position: absolute;
+    content: "";
+    width: 19%;
+    height: 1px;
+    top: 48%;
+    right: 0%;
+    background-color: @bg-input;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotion {
+    width: 100%;
+  }
+
+  .emotion__title::before {
+    width: 30%;
+    left: 0%;
+  }
+
+  .emotion__title::after {
+    width: 30%;
+    right: 0%;
+  }
+
+  .emotion__textarea {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}

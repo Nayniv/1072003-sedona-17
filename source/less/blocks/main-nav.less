@@ -6,4 +6,20 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 64px;
+  height: 52px;
+
+  background-color: @bg-color;
+
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }

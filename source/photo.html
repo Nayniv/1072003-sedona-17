@@ -13,11 +13,11 @@
   <header class="page-header">
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link">Фото и видео</a>
+          <a class="site-list__link  site-list__link--active">Фото и видео</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -27,9 +27,13 @@
         </li>
         <li class="page-header__logo">
           <a class="page-header__link" href="index.html">
-            <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
+            </picture>
           </a>
-          <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span><img src="img/icon-menu-blue.svg" width="23" height="22"></button>
         </li>
       </ul>
     </nav>
@@ -42,35 +46,51 @@
       <p class="photo-guest__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <div class="photo-guest__list">
         <figure class="photo-guest__item">
-          <img class="photo-guest__item-img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+            <img class="photo-guest__item-img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+          </picture>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Неродные просторы</figcaption>
             <span class="photo-guest__name">Автор фото: Борис</span>
-            <div class="photo-guest__like like"></div><span class="photo-guest__like">1350</span>
+            <div class="like"><span class="photo-guest__like">1350</span></div>
           </div>
         </figure>
         <figure class="photo-guest__item">
-          <img class="photo-guest__item-img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+            <img class="photo-guest__item-img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+          </picture>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Местная растительность</figcaption>
             <span class="photo-guest__name">Автор фото: Сергей</span>
-            <div class="photo-guest__like like"></div><span class="photo-guest__like">143</span>
+            <div class="like"><span class="photo-guest__like">143</span></div>
           </div>
         </figure>
         <figure class="photo-guest__item">
-          <img class="photo-guest__item-img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+            <img class="photo-guest__item-img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+          </picture>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Дорога на север</figcaption>
             <span class="photo-guest__name">Автор фото: Петр</span>
-            <div class="photo-guest__like like"></div><span class="photo-guest__like">96</span>
+            <div class="like"><span class="photo-guest__like">96</span></div>
           </div>
         </figure>
         <figure class="photo-guest__item">
-          <img class="photo-guest__item-img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="photo-guest__item-img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
+          </picture>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Мост Дьявола</figcaption>
             <span class="photo-guest__name">Автор фото: Антон</span>
-            <div class="photo-guest__like like"></div><span class="photo-guest__like">254</span>
+            <div class="like"><span class="photo-guest__like">254</span></div>
           </div>
         </figure>
       </div>
@@ -78,8 +98,19 @@
     <section class="video-sedona">
       <h2 class="video-sedona__title title">Все еще сомневаетесь?</h2>
       <p class="video-sedona__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <img class="video-sedona__picture" src="img/video-mobile@1x.jpg" width="321" height="201" alt="Видео Седоны">
-      <div class="video-sedona__pleer-interface"></div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+        <img class="video-sedona__picture" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="321" height="201" alt="Видео Седоны">
+      </picture>
+      <div class="video-sedona__pleer-interface">
+        <div class="video-sedona__scale">
+          <div class="video-sedona__scale-slider"></div>
+        </div>
+        <div class="video-sedona__replay"></div>
+        <div class="video-sedona__subtitles"></div>
+        <div class="video-sedona__fullscreen"></div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -93,7 +124,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 </body>

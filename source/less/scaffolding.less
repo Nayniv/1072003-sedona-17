@@ -26,6 +26,10 @@ body {
   text-transform: uppercase;
 
   background-color: @bg-color;
+
+  @media (min-width: @desktop-width) {
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
 }
 
 img {
@@ -33,7 +37,9 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
