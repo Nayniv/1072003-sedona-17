@@ -41,6 +41,7 @@ input[type="text"] {
 @media (min-width: @tablet-width) {
   .review-form {
     box-sizing: border-box;
+    width: 100%;
     padding: 0 7.8%;
     flex-direction: row;
     justify-content: space-between;
@@ -70,8 +71,8 @@ input[type="text"] {
 
 @media (min-width: @desktop-width) {
   .review-form {
-    padding: 0 10% 0 10%;
     margin-bottom: 102px;
+    padding: 0 10%;
   }
 
   .review-form__block-contact {
@@ -90,13 +91,8 @@ input[type="text"] {
     }
   }
 
-  .review-form__block-attraction {
-    .review-form__description {
-      width: 25%;
-    }
-  }
-
   .review-form__button {
+    width: 50%;
     padding: 16px 147px 16px 148px;
   }
 }

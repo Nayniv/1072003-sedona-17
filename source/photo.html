@@ -11,12 +11,12 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a class="site-list__link  site-list__link--active">Фото и видео</a>
         </li>
         <li class="site-list__item">
@@ -26,14 +26,14 @@
           <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
         <li class="page-header__logo">
-          <a class="page-header__link" href="index.html">
+          <a class="page-header__link" href="index.html" aria-label="Переход на главную страницу">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
               <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
             </picture>
           </a>
-          <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span><img src="img/icon-menu-blue.svg" width="23" height="22"></button>
+          <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span><!-- <img src="img/icon-menu-blue.svg" width="23" height="22"> --></button>
         </li>
       </ul>
     </nav>
@@ -46,11 +46,13 @@
       <p class="photo-guest__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <div class="photo-guest__list">
         <figure class="photo-guest__item">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-            <img class="photo-guest__item-img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-          </picture>
+          <a>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="photo-guest__item-img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+            </picture>
+          </a>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Неродные просторы</figcaption>
             <span class="photo-guest__name">Автор фото: Борис</span>
@@ -58,11 +60,13 @@
           </div>
         </figure>
         <figure class="photo-guest__item">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-            <img class="photo-guest__item-img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
-          </picture>
+          <a>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="photo-guest__item-img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+            </picture>
+          </a>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Местная растительность</figcaption>
             <span class="photo-guest__name">Автор фото: Сергей</span>
@@ -70,11 +74,13 @@
           </div>
         </figure>
         <figure class="photo-guest__item">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-            <img class="photo-guest__item-img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
-          </picture>
+          <a>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="photo-guest__item-img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+            </picture>
+          </a>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Дорога на север</figcaption>
             <span class="photo-guest__name">Автор фото: Петр</span>
@@ -82,11 +88,13 @@
           </div>
         </figure>
         <figure class="photo-guest__item">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-            <img class="photo-guest__item-img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
-          </picture>
+          <a>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="photo-guest__item-img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
+            </picture>
+          </a>
           <div class="photo-guest-text-wrapper">
             <figcaption class="photo-guest__figcaption">Мост Дьявола</figcaption>
             <span class="photo-guest__name">Автор фото: Антон</span>
@@ -117,9 +125,9 @@
     <span class="page-footer__visit-sedona">#visitSEDONA</span>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a class="social__button social__button--twitter button" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
-        <li class="social__item"><a class="social__button social__button--facebook button" href="https://facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social__item"><a class="social__button social__button--youtube button" href="https://YouTube.com/"><span class="visually-hidden">YouTube</span></a></li>
+        <li class="social__item"><a class="social__button social__button--twitter button" href="https://twitter.com/" aria-label="Переход на страницу Twitter"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social__item"><a class="social__button social__button--facebook button" href="https://facebook.com/" aria-label="Переход на страницу Facebook"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social__item"><a class="social__button social__button--youtube button" href="https://YouTube.com/" aria-label="Переход на страницу YouTube"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
@@ -127,6 +135,23 @@
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
+  <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+  </script>
 </body>
 
 </html>
