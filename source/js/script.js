@@ -6,10 +6,10 @@ var closeReview = document.querySelector('.modal-close__button--review');
 var popupError = document.querySelector('.modal-error');
 var closeError = document.querySelector('.modal-close__button--error');
 var form = document.querySelector('.review-form');
-var firstname = form.querySelector('[name=firstname]');
-var surname = form.querySelector('[name=surname]');
-var tel = form.querySelector('[name=tel]');
-var email = form.querySelector('[name=email]');
+var firstname = document.querySelector('[name=firstname]');
+var surname = document.querySelector('[name=surname]');
+var tel = document.querySelector('[name=tel]');
+var email = document.querySelector('[name=email]');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -43,3 +43,5 @@ closeError.addEventListener('click', function(evt) {
   evt.preventDefault();
   popupError.classList.add('modal-close');
 });
+
+//# sourceMappingURL=script.js.map
