@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="логотип Седона">
               </picture>
             </a>
-            <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span><!-- <img src="img/icon-menu-blue.svg" width="23" height="22"> --></button>
+            <button class="main-nav__toggle" aria-label="Открыть меню сайта"><span class="visually-hidden">Открыть меню</span></button>
           </li>
         </ul>
       </nav>
@@ -55,13 +55,7 @@
           <span class="reasons__number">&ndash; №1 &ndash;</span>
           <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="reasons__info-block reasons__info-block--1">
-          <!-- <picture>
-            <source media="(min-width: 800px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-            <source media="(min-width: 512px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-           <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
-          </picture> -->
-        </div>
+        <div class="reasons__info-block reasons__info-block--1"></div>
         <div class="options__list">
           <div class="options__item options__item--housing">
             <h4 class="options__title title title--housing">Жилье</h4>
@@ -81,13 +75,7 @@
           <span class="reasons__number">&ndash; №2 &ndash;</span>
           <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <div class="reasons__info-block reasons__info-block--2">
-          <!-- <picture>
-          <source media="(min-width: 800px)" srcset="img/main-bridge-desktop@1x.jpg">
-          <source media="(min-width: 512px)" srcset="img/main-bridge-tablet@1x.jpg">
-          <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Там есть Мост Дьявола">
-          </picture> -->
-        </div>
+        <div class="reasons__info-block reasons__info-block--2"></div>
         <div class="reasons__list">
           <div class="reasons__item reasons__item--3">
             <h4 class="reasons__title title title--3">Небольшая площадь</h4>
@@ -130,23 +118,7 @@
       </div>
     </footer>
   </div>
-  <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
-
-  navMain.classList.remove('main-nav--nojs');
-
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
