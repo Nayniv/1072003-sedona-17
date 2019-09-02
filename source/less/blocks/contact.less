@@ -13,7 +13,17 @@
 .contact__description input {
   margin-left: 21px;
   margin-top: 10px;
-  padding: 15px 0 17px 22px;
+  border: solid 4px transparent;
+  padding: 11px 0 13px 22px;
+}
+
+.contact__description input:hover {
+  background-color: @bg-input-3;
+}
+
+.contact__description input:focus {
+  border: solid 4px @bg-input-3;
+  background-color: @bg-color;
 }
 
 .contact__description::after {
@@ -79,7 +89,7 @@
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 11px;
-    padding: 15px 0 17px 22px;
+    padding: 12px 0 12px 22px;
     width: 90%;
   }
 
@@ -140,7 +150,7 @@
   .contact__description input {
     display: flex;
     box-sizing: border-box;
-    padding: 13px 0 17px 20px;
+    padding: 12px 0 10px 20px;
     width: 45%;
     margin-left: 0;
     flex-grow: 1;

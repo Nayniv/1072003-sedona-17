@@ -1,16 +1,25 @@
 .emotion__textarea {
-  border: none;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-left: 20px;
   padding-bottom: 14px;
   margin-left: 20px;
   .font(18px, 26px, bold);
   color: @title-color;
   background-color: @bg-input;
+  border: solid 4px transparent;
 }
 
 .emotion {
   margin-bottom: 45px;
+}
+
+.emotion__textarea input:hover {
+  background-color: @bg-input-3;
+}
+
+.emotion__textarea input:focus {
+  border: solid 4px @bg-input-3;
+  background-color: @bg-color;
 }
 
 @media (min-width: @tablet-width) {

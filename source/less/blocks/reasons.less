@@ -85,9 +85,7 @@
   }
 
   .reasons__title {
-    .font(21px;
-    26px;
-    bold);
+    .font(21px, 26px, bold);
   }
 
   .reasons__title-block {
@@ -103,7 +101,8 @@
 
   .reasons__info-block {
     width: 66.7%;
-    height: 257px;
+    min-height: 257px;
+    height: 100%;
   }
 
   .reasons__info-block--1 {
@@ -170,12 +169,17 @@
       padding: 0 5px;
     }
   }
+
+  .reasons__block-wrapper {
+    display: flex;
+    width: 100%;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .reasons__info-block {
     width: 66.7%;
-    height: 256px;
+    //height: 256px;
   }
 
   .reasons__info-block--1 {
@@ -247,6 +251,7 @@
   }
 
   .reasons__list {
+    width: 100%;
     margin-bottom: 12px;
   }
 }
