@@ -22,7 +22,7 @@ gulp.task('copy', function() {
   return gulp.src([
       'source/fonts/**/*.{woff,woff2}',
       'source/img/**/*.{jpg,png,gif,webp,svg}',
-      'source/js/*.js',
+      'source/js/*.min.js',
       'source/*.ico',
       'source/*.html'
     ], {

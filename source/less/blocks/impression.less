@@ -1,5 +1,5 @@
 .impression__title {
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 }
 
 .impression__description {
@@ -30,7 +30,7 @@
 
 .impression__description label:active::before {
   background-color: @bg-input-4;
-  border: solid 18px  @bg-input-4;
+  border: solid 18px @bg-input-4;
 }
 
 .impression__description input:checked + label::before {
@@ -42,7 +42,7 @@
 }
 
 .impression__description input:checked + label:active::before {
-  background-color: @bg-input-5;
+  background-color: rgba(51, 51, 51, 0.3);
 }
 
 @media (min-width: @tablet-width) {
@@ -51,16 +51,16 @@
     position: relative;
     order: -1;
     width: 50%;
+  }
 
-    &__title {
-      text-align: left;
-      margin-bottom: 73px;
-    }
+  .impression__title {
+    text-align: left;
+    margin-bottom: 73px;
+  }
 
-    &__description {
-      padding-left: 76px;
-      padding-bottom: 34px;
-    }
+  .impression__description {
+    padding-left: 76px;
+    padding-bottom: 34px;
   }
 
   .impression__description label::before {

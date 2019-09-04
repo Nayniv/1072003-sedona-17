@@ -41,13 +41,14 @@
   background-color: @bg-input-3;
 }
 
-.attraction__description input:checked + label:active::before {
-  background-color: @bg-input-4;
-}
-
 .attraction__description input:checked + label::before {
   width: 24px;
   background: @bg-input url("../img/icon-tick.svg") 50% no-repeat;
+}
+
+.attraction__description input:checked + label:active::before {
+  width: 24px;
+  background: @bg-input-4 url("../img/icon-tick-down.svg") 50% no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,14 +57,14 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
+  }
 
-    &__description {
-      box-sizing: border-box;
-      width: 50%;
-      padding-bottom: 26px;
-      padding-left: 110px;
-    }
+  .attraction__description {
+    box-sizing: border-box;
+    width: 50%;
+    padding-bottom: 26px;
+    padding-left: 110px;
   }
 
   .attraction__description--bridge,
@@ -84,7 +85,7 @@
     position: relative;
     width: 60%;
     padding: 0 25%;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
   }
 
   .attraction__title::before {
@@ -110,13 +111,13 @@
 
 @media (min-width: @desktop-width) {
   .attraction {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .attraction__title {
     width: 30%;
     padding: 0 35.9%;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
   }
 
   .attraction__title::before {
@@ -132,7 +133,6 @@
   .attraction__description {
     width: 25%;
   }
-
 
   .attraction__description--bridge {
     padding-left: 81px;

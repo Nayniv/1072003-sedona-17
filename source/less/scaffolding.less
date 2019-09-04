@@ -3,6 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-family: "PT Sans";
   font-style: normal;
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
 }
 
 body {
@@ -26,10 +28,6 @@ body {
   text-transform: uppercase;
 
   background-color: @bg-color;
-
-  @media (min-width: @desktop-width) {
-    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
-  }
 }
 
 img {
@@ -53,4 +51,23 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    width: 1200px;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
 }

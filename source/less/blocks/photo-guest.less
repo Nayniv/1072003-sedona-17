@@ -171,14 +171,13 @@
     padding: 0;
     width: 100%;
 
-
     &:first-child {
       height: 400px;
-
-      .photo-guest__like {
-        padding-right: 20px;
-      }
     }
+  }
+
+  .photo-guest__item .photo-guest__like {
+    padding-right: 20px;
   }
 
   .photo-guest__item:not(:first-child) {
@@ -193,6 +192,8 @@
 
   .photo-guest-text-wrapper {
     background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
     color: @text-white;
     padding-top: 28px;
     padding-bottom: 28px;

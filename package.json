@@ -22,7 +22,8 @@
     "posthtml-include": "^1.2.0",
     "rename": "^1.0.4",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "uglify-js": "^3.6.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
